@@ -169,11 +169,11 @@ function addRemoveToFavList(id) {
   if (contain) {
     let number = arr.indexOf(id);
     arr.splice(number, 1);
-    alert("your meal removed from your favourites list");
+    alert("your meal is removed from the favourites list");
   } else {
     // if the meal is not in the favorite list then we will add that meal in the list.
     arr.push(id);
-    alert("your meal add your favourites list");
+    alert("your meal is added to the favourites list");
   }
   // here we will update the local storage and meallist and favMeallist.
   localStorage.setItem("favouritesList", JSON.stringify(arr));
